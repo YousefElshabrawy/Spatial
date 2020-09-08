@@ -1,0 +1,42 @@
+body {
+    font-family: "Lato";
+    font-weight: 500;
+    line-height: 1.7;
+    color: $color-grey-dark-2;
+    font-size: 1.6rem;
+}
+
+.heading-1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 700;
+    color: $color-white;
+}
+
+.heading-2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    color: $color-black;
+}
+
+.heading-3 {
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: $color-grey-light-4;
+}
+
+.heading-4 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-black;
+}
+
+.heading-5 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $color-grey-light-4;
+}

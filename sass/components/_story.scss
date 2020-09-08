@@ -1,0 +1,27 @@
+.story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+        flex: 1;
+        padding: 2rem;
+    }
+    &__img-box {
+        flex: 0 0 14%;
+    }
+    &__img {
+        display: block;
+        border-radius: 50%;
+        border: 7px solid $color-grey-light-4;
+        height: 75%;
+    }
+    @media screen and (max-width:600px) {
+        flex-direction: column;
+        &__img-box {
+            order: -1;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+/*
+$BreakPoint argument choices
+phone
+tab-port
+tab-land
+big-desktop
+*/
+
+@mixin respond($BreakPoint) {
+    @if $BreakPoint==phone {
+        @media (max-width: 37.5em) {
+            @content;
+        }
+    }
+    @if $BreakPoint==tab-port {
+        @media (max-width: 56.25em) {
+            @content;
+        }
+    }
+    @if $BreakPoint==tab-land {
+        @media (max-width: 75em) {
+            @content;
+        }
+    }
+    @if $BreakPoint==big-desktop {
+        @media (min-width: 112.5em) {
+            @content;
+        }
+    }
+}
