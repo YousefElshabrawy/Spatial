@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=.7" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <!--CDN to use the AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Spatial</title>
 </head>
 
@@ -38,13 +40,13 @@
         <button class="btn btn--red header__btn">get started</button>
     </header>
     <section class="about">
-        <div class="about__headings">
+        <div class="about__headings" data-aos="fade-right">
             <h2 class="heading-2 u-mb-sm">MAECENAS LUCTUS LECTUS</h2>
             <h3 class="heading-3 u-mb-md">
                 Lorem ipsum dolor sit amet consectetur.
             </h3>
         </div>
-        <div class="about__infos">
+        <div class="about__infos" data-aos="fade-left">
             <p class="u-mb-md">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos
                 ipsam, iusto sit esse.
@@ -61,14 +63,14 @@
             <h3 class="heading-3">MAECENAS VITAE TELLUS FEUGIAT ELEIFEND</h3>
         </div>
         <div class="gallery features__gallery">
-            <figure class="gallery__item">
-                <img class="gallery__img" src="img/pic02.jpg" alt="" />
+            <figure class="gallery__item" data-aos="zoom-in">
+                <img class="gallery__img" src="img/pic02.jpg " alt=" " />
                 <figcaption class="gallery__caption">
                     Lorem ipsum dolor sit amet.
                 </figcaption>
             </figure>
-            <figure class="gallery__item">
-                <img class="gallery__img" src="img/pic03.jpg" alt="" />
+            <figure class="gallery__item" data-aos="zoom-in">
+                <img class="gallery__img" src="img/pic03.jpg " alt=" " />
                 <figcaption class="gallery__caption">
                     Lorem ipsum dolor sit amet.
                 </figcaption>
@@ -83,7 +85,7 @@
         <h2 class="heading-2">MAURIS VULPUTATE DOLOR</h2>
         <h3 class="heading-3 u-mb-md">FEUGIAT SED LOREM IPSUM MAGNA</h3>
         <div class="stories__items">
-            <figure class="story">
+            <figure class="story" data-aos="fade-up-right">
                 <div class="story__text">
                     <h4 class="heading-4">LOREM IPSUM</h4>
                     <h4 class="heading-5 u-mb-sm">LOREM IPSUM DOLOR SIT</h4>
@@ -92,12 +94,12 @@
                     </p>
                 </div>
                 <figcaption class="story__img-box">
-                    <img src="img/pic04.jpg" alt="" class="story__img" />
+                    <img src="img/pic04.jpg " alt=" " class="story__img" />
                 </figcaption>
             </figure>
-            <figure class="story">
+            <figure class="story" data-aos="fade-up-left">
                 <figcaption class="story__img-box">
-                    <img src="img/pic05.jpg" alt="" class="story__img" />
+                    <img src="img/pic05.jpg " alt=" " class="story__img" />
                 </figcaption>
                 <div class="story__text">
                     <h4 class="heading-4">LOREM IPSUM</h4>
@@ -107,7 +109,7 @@
                     </p>
                 </div>
             </figure>
-            <figure class="story">
+            <figure class="story" data-aos="fade-up-right">
                 <div class="story__text">
                     <h4 class="heading-4">LOREM IPSUM</h4>
                     <h4 class="heading-5 u-mb-sm">LOREM IPSUM DOLOR SIT</h4>
@@ -116,12 +118,12 @@
                     </p>
                 </div>
                 <figcaption class="story__img-box">
-                    <img src="img/pic06.jpg" alt="" class="story__img" />
+                    <img src="img/pic06.jpg " alt=" " class="story__img" />
                 </figcaption>
             </figure>
-            <figure class="story">
+            <figure class="story" data-aos="fade-up-left">
                 <figcaption class="story__img-box">
-                    <img src="img/pic07.jpg" alt="" class="story__img" />
+                    <img src="img/pic07.jpg " alt=" " class="story__img" />
                 </figcaption>
                 <div class="story__text">
                     <h4 class="heading-4">LOREM IPSUM</h4>
@@ -140,19 +142,19 @@
     </section>
     <footer class="footer">
         <div class="footer__icon-box">
-            <a href="#" class="footer__link">
+            <a href="# " class="footer__link">
                 <svg class="footer__icon">
-            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            <use xlink:href="img/sprite.svg#icon-facebook "></use>
           </svg>
             </a>
-            <a href="#" class="footer__link">
+            <a href="# " class="footer__link">
                 <svg class="footer__icon">
-            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            <use xlink:href="img/sprite.svg#icon-instagram "></use>
           </svg>
             </a>
-            <a href="#" class="footer__link">
+            <a href="# " class="footer__link">
                 <svg class="footer__icon">
-            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            <use xlink:href="img/sprite.svg#icon-twitter "></use>
           </svg>
             </a>
         </div>
@@ -161,12 +163,19 @@
         </div>
     </footer>
     <script>
-        var navlist = document.querySelector(".header__navlist");
-        var burger = document.querySelector(".header__burger");
+        var navlist = document.querySelector(".header__navlist ");
+        var burger = document.querySelector(".header__burger ");
         //  console.log(navlist, burger);
-        burger.addEventListener("click", function() {
-            navlist.classList.toggle("header__navlist-active");
-            //console.log("done");
+        burger.addEventListener("click ", function() {
+            navlist.classList.toggle("header__navlist-active ");
+            //console.log("done ");
+        });
+    </script>
+    <!--To use AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
         });
     </script>
 </body>
