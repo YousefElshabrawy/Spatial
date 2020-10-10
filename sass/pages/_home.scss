@@ -9,7 +9,7 @@
 }
 
 .header {
-    background-image: linear-gradient(to right bottom, rgba(#616975, 1), rgba(#30333a, 0.8)), url(../img/banner.jpg);
+    background-image: linear-gradient( rgba(#000, .7), rgba(#000, 0.7)), url(../img/banner.jpg);
     /*background-image: linear-gradient(to right bottom, rgba($color-black, 0.7), rgba($color-grey-light-4, .6)), url(../img/banner.jpg);*/
     background-size: cover;
     background-position: center;
@@ -154,7 +154,7 @@
     grid-row: 5/6;
     grid-column: full-start/full-end;
     padding: 8rem 6rem;
-    background-image: linear-gradient(to right bottom, rgba($color-black, 1), rgba($color-black, 0.6)), url(../img/banner.jpg);
+    background-image: linear-gradient( rgba(#000, .7), rgba(#000, 0.7)), url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
